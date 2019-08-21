@@ -13,11 +13,11 @@
   }
   
   li a:hover:not(.active) {
-    background-color: #111;
+    background-color: blue;
   }
   
   .active {
-    background-color: rgb(29, 16, 145);
+    background-color: cadetblue;
   }
   .grid1 {
     margin-top:20px;
@@ -30,21 +30,12 @@
     grid-template-rows:150px 150px 150px;
     padding: 10px;
   }
-  .item1,.item2 {
-    padding:20px;
-    grid-row-start: 1;
-    grid-row-end: 4;
-    background-color: aquamarine;
-  }
-  .item3,.item4,.item5 {
-    padding:20px;
-    background-color: aquamarine;
-  }
-  img{
+  .cont{
     width: 90%;
     height: 60%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 40px;
     display: block;
   }
   .hero-tagg{   
@@ -58,22 +49,6 @@
     border-bottom: 1px solid rgb(5, 45, 155);
     border-top: 1px solid rgb(5, 45, 155);
     background-image: url('https://images.pexels.com/photos/34199/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260'); background-repeat: no-repeat; background-position: center center; background-size:cover;
-  }
-  .article1{ 
-    
-    float: left;
-    width:48%;
-    padding: 10px 10px 10px 10px;
-  }
-  .article2{
-    float: left;
-    width:48%;
-    padding: 10px 10px 10px 10px;
-  }
-  article:after {
-    content: "";
-    display: table;
-    clear: both;
   }
 
   .footer {
@@ -92,8 +67,24 @@
   }
   #big-col{
     height:600px;
-    background-color: aqua;
+    background-color: dimgrey;
+    padding:10px;
+    border: 2px solid rgba(231, 231, 213, 0.13);
   }
   .short-div{
     height:200px;
+    border: 2px solid rgba(214, 214, 193, 0.13);
+  }
+  #icons li a{
+      color:whitesmoke;
+  }
+  #drop a{
+      color: black;
+  }
+  section{
+      margin-top: -30px;
+      
+  }
+  hr{
+    border-top: 1px solid rgb(212, 15, 15);
   }

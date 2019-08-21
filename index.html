@@ -18,18 +18,18 @@
         <!-- including script modernizer-->
         <script src="includes/js/modernizr-2.6.2.min.js"></script>
     </head>
-    <body style="margin:0;">
+    <body style="background-color: rgba(241, 241, 216, 0.13)";>
 
       <!-- Navigation Bar start-->
-      <nav class="container" id="main">
-        <div class="navbar navbar-fixed-top">
+      <nav class="container" id="main" >
+        <div class="navbar navbar-fixed-top" style="background-color: darkslategray;">
           <div class="container">
             <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <div class="nav-collapse collapse navbar-responsive-collapse">
-              <ul class="nav navbar-nav pull-left">
+            <div class="nav-collapse collapse navbar-responsive-collapse" >
+              <ul class="nav navbar-nav pull-left" id="icons">
                 <li><a class="active" href="#home">Home</a></li>
                 <li><a href="#news">News</a></li>
                 <li><a href="#about">About</a></li>
@@ -37,10 +37,10 @@
               </ul>
               <ul class="nav navbar-nav pull-right">
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login<strong class="caret"></strong></a>
+                  <a style="color:whitesmoke;" href="#" class="dropdown-toggle" data-toggle="dropdown">Login<strong class="caret"></strong></a>
                   <ul class="dropdown-menu dropdown-menu-right">
-                    <li><a href="#">Already Registered</a></li>
-                    <li><a href="#">Signup Now</a></li>
+                    <li id="drop"><a href="#">Already Registered</a></li>
+                    <li id="drop"><a href="#">Signup Now</a></li>
                   </ul>
                 </li>
               </ul>
@@ -54,7 +54,7 @@
       </nav>
 
       <!-- Jumbotron created-->
-      <header class="jumbotron">
+      <header class="jumbotron" style="background-color: cornsilk">
         <div class="hero-tagg">
               <h1 style="margin-left: 20px; font-size: 4em; color: antiquewhite;">Services</h1>
               <span style="margin-left: 20px; font-size: 2em;color:brown;">We provide amazing Solutions.</span>
@@ -66,18 +66,22 @@
       <section class="container-fluid">
         <div class="row-fluid">
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="big-col">
-            <img src="img/1.jpg"><br>
-            <h3>WHY CHOOSE US</h3>
-            <p style="font-family: sans-serif;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rem, facilis 
-              nobis voluptatum est voluptatem accusamus molestiae eaque perspiciatis mollitia.
-            </p>
+            
+              <img class="cont" src="img/1.jpg"><br>
+              <h3 style="font-family: sans-serif; color:red">WHY CHOOSE US</h3>
+              <p style="font-family: sans-serif;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rem, facilis 
+                nobis voluptatum est voluptatem accusamus molestiae eaque perspiciatis mollitia.
+              </p>
+            
           </div>
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="big-col">
-            <img alt="Smiley face" src="img/2.jpg"><br>
-            <h3>OUR MISSION</h3>
-            <p style="font-family: sans-serif;">Quos, non, esse eligendi ab accusantium voluptatem. Maxime eligendi beatae, atque 
-              tempora ullam. Vitae delectus quia, consequuntur rerum molestias quo.
-            </p>
+            
+              <img class="cont" alt="Smiley face" src="img/2.jpg"><br>
+              <h3 style="font-family: sans-serif; color:red">OUR MISSION</h3>
+              <p style="font-family: sans-serif;">Quos, non, esse eligendi ab accusantium voluptatem. Maxime eligendi beatae, atque 
+                tempora ullam. Vitae delectus quia, consequuntur rerum molestias quo.
+              </p>
+            
           </div>
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="big-col">
               <div class="short-div">
@@ -100,21 +104,29 @@
         </div>
       <!-- main section end-->
       </section>
-          <article style="margin:20px 20px 40px 20px;">
-              <div class="article1">
+
+      <!-- Article Started-->
+      <article class="container">
+        <div class="row-fluid" id="text">
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="margin-top: 30px;margin-bottom: 30px;">
                   <h1 style="margin-left: 20px; font-size: 2em;">ADVANCED STORE STATISTICS</h1>
-                  <h3 style="margin-left: 20px; font-size: 1.5em;">Benchmarking your website's performance helps you make great choices for your business.</h3><hr>
+                  <h3 style="margin-left: 20px; font-size: 1.5em;">Benchmarking your website's performance helps you make great choices for your business.</h3><hr/>
                   <p style="margin-left:20px; margin-right:20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quod consequuntur quibusdam, 
                       enim expedita sed quia nesciunt incidunt accusamus necessitatibus modi adipisci officia libero accusantium esse hic, obcaecati, ullam, laboriosam!</p>
-              </div>
-              <div class="article2">
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="margin-top: 30px;margin-bottom: 30px;">
                     <h1 style="margin-left: 20px; font-size: 2em;">APOWERFUL INSIGHTS TO HELP GROW YOUR BUSINESS.</h1>
-                    <h3 style="margin-left: 20px; font-size: 1.5em;">Reports let you easily track and analyze your product sales, orders, and payments.</h3><hr>
+                    <h3 style="margin-left: 20px; font-size: 1.5em;">Reports let you easily track and analyze your product sales, orders, and payments.</h3><hr/>
                     <p style="margin-left:20px; margin-right:20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quod consequuntur quibusdam, enim expedita 
                         sed quia nesciunt incidunt accusamus necessitatibus modi adipisci officia libero accusantium esse hic, obcaecati, ullam, laboriosam!</p>
-               </div>
-          </article>
-          <footer>
+          </div>
+        <!--row end-->
+        </div>
+      <!-- article tag end-->
+      </article>
+
+      <!-- footer start-->
+      <footer>
               <div class="footer">
                   <ul>
                         <li class="link"><a href="#fb"><img alt="Smiley face" style="width: 30px; height: 30px;margin-left: auto;
@@ -123,8 +135,7 @@
                             margin-right: auto;" src="img/twitter.png"></a></li>
                         <li class="link"><a href="#linkedin"><img alt="Smiley face" style="width: 30px; height: 30px; margin-left: auto; 
                             margin-right: auto;" src="img/linkedin.png"></a></li>
-                  </ul>
-                    
+                  </ul>                    
               </div>
           </footer>
           <!-- jquery script-->
