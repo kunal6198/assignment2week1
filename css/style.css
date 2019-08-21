@@ -1,13 +1,4 @@
-.nav-bar{
-    width: 100%;
-    overflow: hidden;
-    top:0;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(64, 78, 158);
-    position: fixed;
-  }
+
   
   li {
     float: left;
@@ -56,11 +47,13 @@
     margin-right: auto;
     display: block;
   }
-  .hero_tag{   
-    margin-top: 90px;
+  .hero-tagg{   
+    margin-top: 50px;
     padding: 50px 0 50px 0;
+    margin-left: 0;
+    margin-right: 0;
     width:100%;
-    height:200px;
+    height:100%;
     background-color: #f5f5f5;
     border-bottom: 1px solid rgb(5, 45, 155);
     border-top: 1px solid rgb(5, 45, 155);
@@ -97,9 +90,10 @@
   .link{
     padding: 0;
   }
-  
-  
-
-  
-
-  
+  #big-col{
+    height:600px;
+    background-color: aqua;
+  }
+  .short-div{
+    height:200px;
+  }

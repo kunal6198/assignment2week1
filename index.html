@@ -1,66 +1,111 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- Website Title -->
         <title>Using Bootstrap 3</title>
+
+        <!-- Meta tags -->
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         
         <!-- Bootstrap CSS -->
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 		    <link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">  
         
+        <!-- Custom CSS -->
         <link rel="stylesheet" href="css/style.css">
+
+        <!-- including script modernizer-->
+        <script src="includes/js/modernizr-2.6.2.min.js"></script>
     </head>
     <body style="margin:0;">
-        <div style="padding:0; margin:0;">
-            <ul class="nav-bar">
+
+      <!-- Navigation Bar start-->
+      <nav class="container" id="main">
+        <div class="navbar navbar-fixed-top">
+          <div class="container">
+            <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="nav-collapse collapse navbar-responsive-collapse">
+              <ul class="nav navbar-nav pull-left">
                 <li><a class="active" href="#home">Home</a></li>
                 <li><a href="#news">News</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact_us">Contact</a></li>
-                <li style="float:right;"><a href="#login">Login</a></li>
-            </ul>
-          </div><br>
-          <section class="hero_tag">
-              <h1 style="margin-left: 20px; font-size: 4em; color: antiquewhite;">Services</h1>
-              <span style="margin-left: 20px; font-size: 2em;color: antiquewhite;">We provide amazing Solutions.</span>
-          </section>
-          <header>
-            <div class="grid1">
-                    <div class="item1" >
-                        <img src="img/1.jpg"><br>
-                        <h3>WHY CHOOSE US</h3>
-                        <p style="font-family: sans-serif;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rem, facilis 
-                            nobis voluptatum est voluptatem accusamus molestiae eaque perspiciatis mollitia.
-                        </p>
-                    </div>
-                    <div class="item2">
-                        <img alt="Smiley face" src="img/2.jpg"><br>
-                        <h3>OUR MISSION</h3>
-                        <p style="font-family: sans-serif;">Quos, non, esse eligendi ab accusantium voluptatem. Maxime eligendi beatae, atque 
-                            tempora ullam. Vitae delectus quia, consequuntur rerum molestias quo.
-                        </p>
-                    </div>
-                    <div class="item3"><h3>1. CHOOSE A PRODUCT</h3>
-                        <p style="font-family: sans-serif;">Perferendis, nam. Eum aperiam vel animi beatae corporis dignissimos, molestias, 
-                            placeat, maxime optio ipsam nostrum atque quidem.</p>
-                        </div>  
-                    <div class="item4"><h3>2. ENTER SHIPPING INFO</h3> 
-                        <P style="font-family: sans-serif;">Saepe qui enim at animi. Repellendus, blanditiis doloremque asperiores reprehenderit deleniti.
-                        Ipsam nam accusantium ex!</P>
-                    </div>
-                    <div class="item5"><h3>3. COMPLETE YOUR PAYMENT</h3>
-                        <p style="font-family: sans-serif;">Necessitatibus accusamus, inventore atque commodi, animi architecto ea sed, suscipit 
-                        tempora ex deleniti quae. Consectetur, sint velit.</p>
-                    </div>   
+              </ul>
+              <ul class="nav navbar-nav pull-right">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login<strong class="caret"></strong></a>
+                  <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a href="#">Already Registered</a></li>
+                    <li><a href="#">Signup Now</a></li>
+                  </ul>
+                </li>
+              </ul>
+            <!-- end nav collapse-->
             </div>
-          </header>
+          <!-- end container-->
+          </div>
+        <!-- end navbar div-->
+        </div>
+      <!-- end navigation bar-->
+      </nav>
+
+      <!-- Jumbotron created-->
+      <header class="jumbotron">
+        <div class="hero-tagg">
+              <h1 style="margin-left: 20px; font-size: 4em; color: antiquewhite;">Services</h1>
+              <span style="margin-left: 20px; font-size: 2em;color:brown;">We provide amazing Solutions.</span>
+        </div>
+      <!-- jumbotron end-->
+      </header>
+
+      <!-- main section created-->
+      <section class="container-fluid">
+        <div class="row-fluid">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="big-col">
+            <img src="img/1.jpg"><br>
+            <h3>WHY CHOOSE US</h3>
+            <p style="font-family: sans-serif;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rem, facilis 
+              nobis voluptatum est voluptatem accusamus molestiae eaque perspiciatis mollitia.
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="big-col">
+            <img alt="Smiley face" src="img/2.jpg"><br>
+            <h3>OUR MISSION</h3>
+            <p style="font-family: sans-serif;">Quos, non, esse eligendi ab accusantium voluptatem. Maxime eligendi beatae, atque 
+              tempora ullam. Vitae delectus quia, consequuntur rerum molestias quo.
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="big-col">
+              <div class="short-div">
+                <h3>1. CHOOSE A PRODUCT</h3>
+                <p style="font-family: sans-serif;">Perferendis, nam. Eum aperiam vel animi beatae corporis dignissimos, molestias, 
+                  placeat, maxime optio ipsam nostrum atque quidem.
+                </p>
+              </div>  
+              <div class="short-div">
+                <h3>2. ENTER SHIPPING INFO</h3> 
+                <p style="font-family: sans-serif;">Saepe qui enim at animi. Repellendus, blanditiis doloremque asperiores reprehenderit deleniti.
+                  Ipsam nam accusantium ex!</p>
+              </div>
+              <div class="short-div">
+                <h3>3. COMPLETE YOUR PAYMENT</h3>
+                <p style="font-family: sans-serif;">Necessitatibus accusamus, inventore atque commodi, animi architecto ea sed, suscipit 
+                  tempora ex deleniti quae. Consectetur, sint velit.</p>
+              </div>   
+          </div>
+        </div>
+      <!-- main section end-->
+      </section>
           <article style="margin:20px 20px 40px 20px;">
               <div class="article1">
                   <h1 style="margin-left: 20px; font-size: 2em;">ADVANCED STORE STATISTICS</h1>
                   <h3 style="margin-left: 20px; font-size: 1.5em;">Benchmarking your website's performance helps you make great choices for your business.</h3><hr>
-                  <p style="margin-left:20px; margin-right:20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quod consequuntur quibusdam, enim expedita sed quia nesciunt incidunt accusamus necessitatibus 
-                      modi adipisci officia libero accusantium esse hic, obcaecati, ullam, laboriosam!</p>
+                  <p style="margin-left:20px; margin-right:20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quod consequuntur quibusdam, 
+                      enim expedita sed quia nesciunt incidunt accusamus necessitatibus modi adipisci officia libero accusantium esse hic, obcaecati, ullam, laboriosam!</p>
               </div>
               <div class="article2">
                     <h1 style="margin-left: 20px; font-size: 2em;">APOWERFUL INSIGHTS TO HELP GROW YOUR BUSINESS.</h1>
@@ -82,5 +127,14 @@
                     
               </div>
           </footer>
+          <!-- jquery script-->
+          <script src="http://code.jquery.com/jquery.js"></script>
+          <script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+
+          <!-- Bootstrap JS -->
+	        <script src="bootstrap/js/bootstrap.min.js"></script>
+	
+	        <!-- Custom JS -->
+	        <script src="includes/js/script.js"></script>
     </body>
 </html>
