@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="css/style.css">
 
         <!-- including script modernizer-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="includes/js/modernizr-2.6.2.min.js"></script>
     </head>
     <body style="background-color: rgba(241, 241, 216, 0.13)";>
@@ -62,9 +63,46 @@
       <!-- jumbotron end-->
       </header>
 
+      <!-- Carousel start-->
+      <div class="container-fluid"> 
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+        
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" style="padding:0;margin:0;height:500px;">
+              <div class="item active">
+                <img src="https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Los Angeles" style="width:100%;height:100%;">
+              </div>
+        
+              <div class="item">
+                <img src="https://images.pexels.com/photos/958026/assembly-smartphone-photography-photograph-958026.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Chicago" style="width:100%;height:100%;">
+              </div>
+            
+              <div class="item">
+                <img src="https://images.pexels.com/photos/251603/pexels-photo-251603.jpeg?cs=srgb&dl=art-background-image-blur-251603.jpg&fm=jpg" alt="New york" style="width:100%;height:100%;">
+              </div>
+            </div>
+        
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              
+            </a>
+          </div>
+        </div>
+
       <!-- main section created-->
-      <section class="container-fluid">
-        <div class="row-fluid">
+      <section class="container">
+        <div class="row-fluid" style="margin-top: 30px;">
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="big-col">
             
               <img class="cont" src="img/1.jpg"><br>

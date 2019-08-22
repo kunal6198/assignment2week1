@@ -19,17 +19,7 @@
   .active {
     background-color: cadetblue;
   }
-  .grid1 {
-    margin-top:20px;
-    margin-right: 1%;
-    margin-left:1%;
-    margin-bottom: 20px;
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 30% 30% 38%;
-    grid-template-rows:150px 150px 150px;
-    padding: 10px;
-  }
+  
   .cont{
     width: 90%;
     height: 60%;
@@ -88,3 +78,11 @@
   hr{
     border-top: 1px solid rgb(212, 15, 15);
   }
+  #myCarousel{
+    margin-bottom:30px;
+    margin-top:-30px;
+    padding:0;
+  }
+
+
+ 
